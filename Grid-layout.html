@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container-fluid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+            background-color: white;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+
+        .item {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            height: 80px;
+        }
+
+        .item1 {
+            grid-column: span 4;
+
+        }
+
+        .item2 {
+            grid-row: span 4;
+            height: 335px;
+        }
+
+        .item3 {
+            grid-column: span 1;
+        }
+
+        .item4 {
+            grid-column: span 2;
+        }
+
+        .item5 {
+            grid-column: span 2;
+        }
+
+        .item6 {
+            grid-column: span 1;
+        }
+
+        .item7,
+        .item8 {
+            grid-column: span 1;
+        }
+
+        .tem9 {
+            grid-column: span 1;
+        }
+
+        .item10 {
+            grid-column: span 3;
+        }
+
+        .heading {
+            grid-column: span 4;
+            font-size: 18px;
+            background-color: transparent;
+            color: black;
+            justify-content: start;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow:auto;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <div class="heading">Create the following layout using grid layout:</div>
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+        <div class="item item7">7</div>
+        <div class="item item8">8</div>
+        <div class="item item9">9</div>
+        <div class="item item10">10</div>
+    </div>
+
+</body>
+
+</html>
